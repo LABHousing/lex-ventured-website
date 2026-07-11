@@ -416,6 +416,14 @@ textarea {
   font-size: 0.95rem;
 }
 
+.footer-logo {
+  width: 3rem;
+  height: auto;
+  display: inline-block;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+}
+
 @media (max-width: 980px) {
   .section-split,
   .footer-inner {
