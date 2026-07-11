@@ -77,6 +77,20 @@ textarea {
   border-radius: 8px;
 }
 
+/* Contact page hero logo */
+.section-hero .hero-logo {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 160px;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  .section-hero .hero-logo {
+    width: 110px;
+  }
+}
+
 .brand-text {
   font-size: 1rem;
   font-weight: 700;
