@@ -42,6 +42,29 @@ textarea {
   backdrop-filter: blur(10px);
 }
 
+.home-page .site-header {
+  background: linear-gradient(180deg, rgba(7, 16, 30, 0.95), rgba(15, 23, 42, 0.95));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.home-page .header-inner {
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+}
+
+.home-page .site-nav {
+  gap: 1rem;
+}
+
+.home-page .site-nav a {
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.home-page .header-actions {
+  gap: 0.75rem;
+}
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -58,21 +81,9 @@ textarea {
   text-decoration: none;
 }
 
-.brand-mark {
-  display: inline-flex;
-  width: 2.5rem;
-  height: 2.5rem;
-  align-items: center;
-  justify-content: center;
-  background: #e8d7c1;
-  color: #111827;
-  border-radius: 12px;
-  font-weight: 700;
-}
-
 .site-logo {
-  width: 3rem;
-  height: auto;
+  height: 55px;
+  width: auto;
   display: inline-block;
   border-radius: 8px;
 }
@@ -94,6 +105,66 @@ textarea {
 .brand-text {
   font-size: 1rem;
   font-weight: 700;
+}
+
+.home-page .brand {
+  gap: 0.6rem;
+}
+
+.home-page .brand-text {
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.home-page .site-logo {
+  height: 55px;
+  width: auto;
+}
+
+.contact-page .section-hero {
+  background: linear-gradient(180deg, rgba(248, 248, 246, 0.95), rgba(255, 255, 255, 0.95));
+  padding: 3.5rem 0 2rem;
+}
+
+.contact-page .page-hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 2rem 2.5rem;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  border-radius: 32px;
+  box-shadow: 0 30px 90px rgba(17, 24, 39, 0.08);
+}
+
+.contact-page .hero-logo {
+  width: 120px;
+  height: auto;
+  margin: 0 auto 1.5rem;
+}
+
+.contact-page .eyebrow {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: #f5f2eb;
+  color: #6b7280;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.contact-page .section-soft h1 {
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  margin-top: 0;
+}
+
+.contact-page .section-soft .lede {
+  max-width: 610px;
+  margin: 1.25rem auto 0;
+  color: #4b5563;
+  line-height: 1.8;
 }
 
 .nav-toggle {
