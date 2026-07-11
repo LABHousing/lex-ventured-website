@@ -3,76 +3,205 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lex Ventured & Co</title>
+    <title>Lex Ventured & Co | Home</title>
+    <meta name="description" content="Lex Ventured & Co helps homeowners explore selling options with honest guidance, no pressure, and flexible timelines." />
+    <meta property="og:title" content="Lex Ventured & Co | Home" />
+    <meta property="og:description" content="Lex Ventured & Co helps homeowners explore selling options with honest guidance, no pressure, and flexible timelines." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lex-ventured-website-connect-repo.up.railway.app/index.html" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <div>
-          <p class="eyebrow">Lex Ventured & Co</p>
-          <h1>A creative real estate investment company.</h1>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">LV</span>
+          <span class="brand-text">Lex Ventured & Co</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav id="site-menu" class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="selling-options.html">Selling Options</a>
+          <a href="about.html">About Us</a>
+          <a href="get-your-offer.html">Get Your Offer</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="header-actions">
+          <a class="header-link" href="tel:18336008355">(833) 600-8355</a>
+          <a class="button button-primary" href="get-your-offer.html">Get Your Offer</a>
         </div>
-        <a class="button button-primary" href="#contact">Contact us</a>
       </div>
     </header>
 
     <main>
-      <section class="hero container">
-        <div class="hero-copy">
-          <p class="hero-tag">A creative real estate investment company.</p>
-          <h2>Precision buying, fast closes, and tailored solutions for every property.</h2>
-          <p class="hero-text">We help homeowners move forward with clarity, confidence, and strong offers backed by experienced investment strategy.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Sell with confidence</a>
-            <a class="button button-secondary" href="#services">Our approach</a>
+      <section class="hero section-hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <span class="eyebrow">Every seller deserves options</span>
+            <h1>Every Home Has a Story. Every Seller Deserves Options.</h1>
+            <p class="hero-text">Whether you are looking for a cash offer, more time to move, or a creative real estate solution, Lex Ventured & Co. will help you explore the path that best fits your situation—with honest guidance and no pressure.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="get-your-offer.html">Get Your Offer</a>
+              <a class="button button-secondary" href="how-it-works.html">See How It Works</a>
+            </div>
+            <div class="trust-grid">
+              <span>No obligation</span>
+              <span>No pressure</span>
+              <span>Flexible timelines</span>
+              <span>Sell as-is</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="services" class="container section-card-list">
-        <h3>What we do</h3>
-        <div class="cards">
+      <section class="container section-card-list">
+        <div class="section-heading">
+          <span class="eyebrow">How it works</span>
+          <h2>Three simple steps to explore your options</h2>
+        </div>
+        <div class="cards cards-grid">
+          <article class="card card-step">
+            <span class="step-number">1</span>
+            <h3>Tell us about your property</h3>
+            <p>Share key details and your timeline so we can find the right path.</p>
+          </article>
+          <article class="card card-step">
+            <span class="step-number">2</span>
+            <h3>We review your situation and options</h3>
+            <p>We review your property, your goals, and the local market to recommend suitable options.</p>
+          </article>
+          <article class="card card-step">
+            <span class="step-number">3</span>
+            <h3>Choose the solution that works best for you</h3>
+            <p>Select the option that fits your needs, whether quick, flexible, or traditional.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section-card-list">
+        <div class="section-heading">
+          <span class="eyebrow">Situations we help with</span>
+          <h2>We support homeowners with thoughtful, respectful options</h2>
+        </div>
+        <div class="cards cards-grid">
           <article class="card">
-            <h4>Creative sales solutions</h4>
-            <p>We provide homeowners with fast, flexible options for off-market sales, direct purchases, and win-win real estate exits.</p>
+            <h3>Inherited property</h3>
+            <p>Support for families navigating inherited homes and the choices ahead.</p>
           </article>
           <article class="card">
-            <h4>Investment acquisition</h4>
-            <p>We source promising properties and structure deals that support strong returns and smooth transitions.</p>
+            <h3>Repairs feel overwhelming</h3>
+            <p>We can explore selling as-is so you do not have to manage repairs first.</p>
           </article>
           <article class="card">
-            <h4>Partner growth</h4>
-            <p>We collaborate with agents, investors, and operators to expand opportunity pipelines and accelerate deal flow.</p>
+            <h3>Tired landlord</h3>
+            <p>Help for landlords who want a smoother exit and a practical next step.</p>
+          </article>
+          <article class="card">
+            <h3>Vacant property</h3>
+            <p>Clear options for homes that are already empty and ready to move on.</p>
+          </article>
+          <article class="card">
+            <h3>Behind on payments</h3>
+            <p>Guidance for homeowners who need a solution that addresses timing and finances.</p>
+          </article>
+          <article class="card">
+            <h3>Relocating</h3>
+            <p>Fast or flexible pathways for sellers who need to move on their timeline.</p>
+          </article>
+          <article class="card">
+            <h3>Divorce or life transition</h3>
+            <p>Respectful support during change, without pressure or judgment.</p>
+          </article>
+          <article class="card">
+            <h3>Need a faster sale</h3>
+            <p>Options that focus on a more efficient process while staying honest and clear.</p>
+          </article>
+          <article class="card">
+            <h3>Just exploring options</h3>
+            <p>Great for homeowners who want information before making a decision.</p>
           </article>
         </div>
       </section>
 
       <section class="container section-split">
         <div>
-          <h3>Trusted approach</h3>
-          <p>Our work starts with a clear assessment of each property’s value, the owner’s needs, and the best path forward. That means offers built around speed, certainty, and minimal hassle.</p>
-          <ul>
-            <li>Fast decisions, fair offers</li>
-            <li>Flexible closing timelines</li>
-            <li>Creative terms for complex situations</li>
+          <h2>Selling options that match your needs</h2>
+          <p>Every homeowner’s situation is different. We offer a range of paths and explain which may be the best fit based on your goals and property details.</p>
+          <ul class="check-list">
+            <li>Direct cash purchase</li>
+            <li>As-is sale</li>
+            <li>Novation or market-assisted sale</li>
+            <li>Seller financing</li>
+            <li>Flexible closing timeline</li>
+            <li>Traditional listing referral when that is the better fit</li>
           </ul>
+          <p class="disclaimer">Not every option is available for every property. Recommendations depend on your goals, the property condition, and current market conditions.</p>
         </div>
-        <div class="section-split-image">
-          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Real estate investment" />
+        <div class="section-split-image vertical-image">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80" alt="Seller options discussion" />
         </div>
       </section>
 
-      <section id="contact" class="container section-contact">
-        <h3>Ready to talk?</h3>
-        <p>Reach out to explore how Lex Ventured & Co can help with your property goals.</p>
-        <a class="button button-primary" href="mailto:hello@lexventuredco.com">hello@lexventuredco.com</a>
+      <section class="container section-card-list">
+        <div class="section-heading">
+          <span class="eyebrow">Why work with us</span>
+          <h2>Trusted support for sellers who want clarity</h2>
+        </div>
+        <div class="cards cards-grid">
+          <article class="card">
+            <h3>Honest communication</h3>
+            <p>We explain your options clearly and answer questions without pressure.</p>
+          </article>
+          <article class="card">
+            <h3>Multiple selling options</h3>
+            <p>We present a range of choices so you can select the path that feels right.</p>
+          </article>
+          <article class="card">
+            <h3>No unnecessary repairs</h3>
+            <p>We can work with properties as-is so you do not have to spend on repairs first.</p>
+          </article>
+          <article class="card">
+            <h3>Flexible closing dates</h3>
+            <p>Close when it works for you—fast or on a more relaxed timeline.</p>
+          </article>
+          <article class="card">
+            <h3>Clear next steps</h3>
+            <p>Every option includes a simple explanation of what happens next.</p>
+          </article>
+          <article class="card">
+            <h3>Respect for your situation</h3>
+            <p>We treat every homeowner with care and avoid judgment every step of the way.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-cta section-cta-dark">
+        <div class="container cta-inner">
+          <h2>Sell Your Home, Your Way. On Your Timeline.</h2>
+          <p>Share a few details about your property and we will help you understand your options. No pressure, no obligation, and no confusing process.</p>
+          <a class="button button-primary" href="get-your-offer.html">Explore My Options</a>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>Lex Ventured & Co — A creative real estate investment company.</p>
+        <div>
+          <p>Lex Ventured & Co — Real estate solutions for sellers.</p>
+          <p class="footer-note">Equal Housing Opportunity. <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-use.html">Terms of Use</a></p>
+        </div>
+        <div>
+          <a class="footer-link" href="mailto:lex@bonillabuilding.com">lex@bonillabuilding.com</a>
+          <a class="footer-link" href="tel:18336008355">(833) 600-8355</a>
+        </div>
       </div>
     </footer>
   </body>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Your Offer | Lex Venture</title>
+    <meta name="description" content="Share your property details with Lex Venture to get personalized selling options and a no-pressure offer process." />
+    <meta property="og:title" content="Get Your Offer | Lex Venture" />
+    <meta property="og:description" content="Share your property details with Lex Venture to get personalized selling options and a no-pressure offer process." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lex-ventured-website-connect-repo.up.railway.app/get-your-offer.html" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">LV</span>
+          <span class="brand-text">Lex Venture</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav id="site-menu" class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="selling-options.html">Selling Options</a>
+          <a href="about.html">About Us</a>
+          <a href="get-your-offer.html">Get Your Offer</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="header-actions">
+          <a class="header-link" href="tel:18336008355">(833) 600-8355</a>
+          <a class="button button-primary" href="get-your-offer.html">Get Your Offer</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero section-soft">
+        <div class="container page-hero">
+          <span class="eyebrow">Your offer</span>
+          <h1>Tell us about your property so we can show the options.</h1>
+          <p class="lede">Complete the form below and we will connect with you to review the best next step for your situation.</p>
+        </div>
+      </section>
+
+      <section class="container section-card-list">
+        <div class="section-heading">
+          <span class="eyebrow">Start here</span>
+          <h2>Property details and seller information</h2>
+        </div>
+        <div class="form-card">
+          <form id="lead-form" class="lead-form" action="/submit-lead" method="POST">
+            <div class="form-grid">
+              <label>
+                Full name
+                <input type="text" name="fullName" placeholder="Your name" required />
+              </label>
+              <label>
+                Phone number
+                <input type="tel" name="phone" placeholder="(833) 600-8355" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Property address
+                <input type="text" name="address" placeholder="Street address" required />
+              </label>
+              <label>
+                City
+                <input type="text" name="city" placeholder="City" required />
+              </label>
+              <label>
+                State
+                <input type="text" name="state" placeholder="State" required />
+              </label>
+              <label>
+                ZIP code
+                <input type="text" name="zip" placeholder="ZIP code" required />
+              </label>
+              <label>
+                Property type
+                <select name="propertyType" required>
+                  <option value="">Select property type</option>
+                  <option>Single-family home</option>
+                  <option>Multi-family</option>
+                  <option>Condo / townhome</option>
+                  <option>Vacant land</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label>
+                Occupancy status
+                <select name="occupancyStatus" required>
+                  <option value="">Select occupancy status</option>
+                  <option>Owner occupied</option>
+                  <option>Tenant occupied</option>
+                  <option>Vacant</option>
+                </select>
+              </label>
+              <label>
+                Property condition
+                <select name="condition" required>
+                  <option value="">Select condition</option>
+                  <option>Good</option>
+                  <option>Fair</option>
+                  <option>Needs repairs</option>
+                  <option>Major work needed</option>
+                </select>
+              </label>
+              <label>
+                Estimated repairs
+                <input type="text" name="repairs" placeholder="Estimate or description" />
+              </label>
+              <label>
+                Asking price
+                <input type="text" name="askingPrice" placeholder="Your target price" />
+              </label>
+              <label>
+                Mortgage balance, if known
+                <input type="text" name="mortgageBalance" placeholder="Amount remaining" />
+              </label>
+              <label>
+                Desired closing timeline
+                <select name="timeline" required>
+                  <option value="">Select timeline</option>
+                  <option>Within 2 weeks</option>
+                  <option>1-2 months</option>
+                  <option>More than 2 months</option>
+                  <option>Flexible</option>
+                </select>
+              </label>
+              <label>
+                Reason for selling
+                <select name="reason" required>
+                  <option value="">Select reason</option>
+                  <option>Relocating</option>
+                  <option>Inherited property</option>
+                  <option>Repairs feel overwhelming</option>
+                  <option>Behind on payments</option>
+                  <option>Tired landlord</option>
+                  <option>Life transition</option>
+                  <option>Exploring options</option>
+                </select>
+              </label>
+            </div>
+            <label class="label-full">
+              Additional notes
+              <textarea name="notes" rows="4" placeholder="Anything else you'd like us to know"></textarea>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="consent" required />
+              I consent to receive calls, texts, and emails about my property and selling options.
+            </label>
+            <p class="form-note">This form is prepared for future connection to an email service, CRM, webhook, or API. No lead destination is currently hard-coded.</p>
+            <button class="button button-primary" type="submit">Submit property details</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p>Lex Venture — Real estate solutions for sellers.</p>
+          <p class="footer-note">Equal Housing Opportunity. Privacy Policy &middot; Terms of Use.</p>
+        </div>
+        <div>
+          <a class="footer-link" href="mailto:lex@bonillabuilding.com">lex@bonillabuilding.com</a>
+          <a class="footer-link" href="tel:18336008355">(833) 600-8355</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

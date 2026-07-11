@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Lex Venture</title>
+    <meta name="description" content="Contact Lex Venture for a respectful, no-pressure conversation about selling your home." />
+    <meta property="og:title" content="Contact Us | Lex Venture" />
+    <meta property="og:description" content="Contact Lex Venture for a respectful, no-pressure conversation about selling your home." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lex-ventured-website-connect-repo.up.railway.app/contact.html" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">LV</span>
+          <span class="brand-text">Lex Venture</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav id="site-menu" class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="selling-options.html">Selling Options</a>
+          <a href="about.html">About Us</a>
+          <a href="get-your-offer.html">Get Your Offer</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="header-actions">
+          <a class="header-link" href="tel:18336008355">(833) 600-8355</a>
+          <a class="button button-primary" href="get-your-offer.html">Get Your Offer</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero section-soft">
+        <div class="container page-hero">
+          <span class="eyebrow">Contact us</span>
+          <h1>Reach out for a calm, straightforward conversation.</h1>
+          <p class="lede">Use the form below, call, or email us to learn more about how we can help you explore your selling options.</p>
+        </div>
+      </section>
+
+      <section class="container section-card-list">
+        <div class="section-heading">
+          <span class="eyebrow">Connect with us</span>
+          <h2>Ways to get in touch</h2>
+        </div>
+        <div class="cards cards-grid">
+          <article class="card">
+            <h3>Phone</h3>
+            <p><a href="tel:18336008355">(833) 600-8355</a></p>
+          </article>
+          <article class="card">
+            <h3>Email</h3>
+            <p><a href="mailto:lex@bonillabuilding.com">lex@bonillabuilding.com</a></p>
+          </article>
+          <article class="card">
+            <h3>Hours</h3>
+            <p>[Business hours placeholder]</p>
+          </article>
+          <article class="card">
+            <h3>Service area</h3>
+            <p>[Service areas placeholder]</p>
+          </article>
+          <article class="card">
+            <h3>Response time</h3>
+            <p>We strive to respond within 1-2 business days.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section-split">
+        <div>
+          <h2>Message us directly</h2>
+          <form class="lead-form" action="/submit-lead" method="POST">
+            <label>
+              Full name
+              <input type="text" name="fullName" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="consent" required />
+              I agree to receive communications by email and phone.
+            </label>
+            <button class="button button-primary" type="submit">Send message</button>
+          </form>
+        </div>
+        <div class="section-split-image vertical-image">
+          <img src="https://images.unsplash.com/photo-1519974719765-e6559eac2575?auto=format&fit=crop&w=1200&q=80" alt="Contact support" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p>Lex Venture — Real estate solutions for sellers.</p>
+          <p class="footer-note">Equal Housing Opportunity. Privacy Policy &middot; Terms of Use.</p>
+        </div>
+        <div>
+          <a class="footer-link" href="mailto:lex@bonillabuilding.com">lex@bonillabuilding.com</a>
+          <a class="footer-link" href="tel:18336008355">(833) 600-8355</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
