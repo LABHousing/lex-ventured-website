@@ -1091,6 +1091,10 @@ textarea {
   color: #ffffff;
 }
 
+.site-footer > .container > div > p:first-of-type {
+  color: #000000;
+}
+
 .site-footer .footer-inner {
   display: flex;
   justify-content: space-between;
