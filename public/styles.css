@@ -2,15 +2,15 @@
   color-scheme: light;
   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   background: #ffffff;
-  color: #1a1f3a;
-  --primary: #1a1f3a;
+  color: #000000;
+  --primary: #000000;
   --accent: #2563eb;
   --light-bg: #f8fafc;
   --border: #e2e8f0;
   --text-secondary: #64748b;
-  --shadow-sm: 0 2px 8px rgba(26, 31, 58, 0.08);
-  --shadow-md: 0 8px 24px rgba(26, 31, 58, 0.12);
-  --shadow-lg: 0 16px 40px rgba(26, 31, 58, 0.15);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.15);
 }
 
 * {
