@@ -11,22 +11,22 @@
     <meta property="og:url" content="https://lex-ventured-website-connect-repo.up.railway.app/index.html" />
     <link rel="icon" href="/images/logo.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <script src="scripts.js" defer></script>
   </head>
   <body class="home-page">
-    <header class="site-header">
+    <header class="site-header" role="banner">
       <div class="container header-inner">
         <a class="brand" href="index.html">
           <img class="site-logo" src="/images/logo.png" alt="Lex Ventured & Co logo" />
           <span class="brand-text">Lex Ventured & Co</span>
         </a>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu-panel" aria-label="Toggle navigation">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
-        <nav id="site-menu" class="site-nav">
+
+        <nav id="site-menu" class="site-nav" aria-label="Primary navigation">
           <a href="index.html">Home</a>
           <a href="how-it-works.html">How It Works</a>
           <a href="selling-options.html">Selling Options</a>
@@ -34,9 +34,23 @@
           <a href="get-your-offer.html">Get Your Offer</a>
           <a href="contact.html">Contact Us</a>
         </nav>
+
         <div class="header-actions">
           <a class="header-link" href="tel:12625970670">(262) 597-0670</a>
           <a class="button button-primary" href="get-your-offer.html">Get Your Offer</a>
+        </div>
+      </div>
+
+      <div id="site-menu-panel" class="mobile-menu-panel" hidden aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="selling-options.html">Selling Options</a>
+        <a href="about.html">About Us</a>
+        <a href="get-your-offer.html">Get Your Offer</a>
+        <a href="contact.html">Contact Us</a>
+        <div class="mobile-menu-footer">
+          <a class="mobile-phone" href="tel:12625970670">(262) 597-0670</a>
+          <a class="button button-primary mobile-menu-button" href="get-your-offer.html">Get Your Offer</a>
         </div>
       </div>
     </header>
@@ -45,8 +59,7 @@
       <section class="hero section-hero">
         <div class="container hero-inner">
           <div class="hero-copy">
-            <span class="eyebrow">A Creative Real Estate Investment Company</span>
-            <h1>Creative Home-Sale Solutions That Fit Your Timeline.</h1>
+            <h1>A Creative Real Estate Investment Company.</h1>
             <p class="hero-text">Whether you are looking for a cash offer, more time to move, or a creative real estate solution, Lex Ventured & Co. will help you explore the path that best fits your situation—with honest guidance and no pressure.</p>
             <div class="hero-actions">
               <a class="button button-primary" href="get-your-offer.html">Get Your Offer</a>
@@ -205,5 +218,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/header.js" defer></script>
   </body>
 </html>

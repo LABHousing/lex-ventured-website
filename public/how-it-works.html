@@ -11,22 +11,22 @@
     <meta property="og:url" content="https://lex-ventured-website-connect-repo.up.railway.app/how-it-works.html" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <script src="scripts.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header" role="banner">
       <div class="container header-inner">
         <a class="brand" href="index.html">
           <img class="site-logo" src="/images/logo.png" alt="Lex Ventured & Co logo" />
           <span class="brand-text">Lex Ventured & Co</span>
         </a>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
-          <span class="sr-only">Toggle navigation</span>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu-panel" aria-label="Toggle navigation">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
-        <nav id="site-menu" class="site-nav">
+        <nav id="site-menu" class="site-nav" aria-label="Primary navigation">
           <a href="index.html">Home</a>
           <a href="how-it-works.html">How It Works</a>
           <a href="selling-options.html">Selling Options</a>
@@ -39,13 +39,24 @@
           <a class="button button-primary" href="get-your-offer.html">Get Your Offer</a>
         </div>
       </div>
+      <div id="site-menu-panel" class="mobile-menu-panel" hidden aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="selling-options.html">Selling Options</a>
+        <a href="about.html">About Us</a>
+        <a href="get-your-offer.html">Get Your Offer</a>
+        <a href="contact.html">Contact Us</a>
+        <div class="mobile-menu-footer">
+          <a class="mobile-phone" href="tel:12625970670">(262) 597-0670</a>
+          <a class="button button-primary mobile-menu-button" href="get-your-offer.html">Get Your Offer</a>
+        </div>
+      </div>
     </header>
-
     <main>
       <section class="section-hero section-soft">
         <div class="container page-hero">
           <span class="eyebrow">How it works</span>
-          <h1>Simple steps to understand your selling options.</h1>
+          <h1>Simple. Transparent. Stress-Free.</h1>
           <p class="lede">We keep the process clear and supportive so you can explore your next move with confidence. No pressure, no obligation, and no confusing terms.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="get-your-offer.html">Get Your Offer</a>
@@ -57,7 +68,7 @@
       <section class="container section-card-list">
         <div class="section-heading">
           <span class="eyebrow">Step-by-step</span>
-          <h2>How the Lex Venture process works</h2>
+          <h2>How Our Process Works</h2>
         </div>
         <div class="cards cards-grid">
           <article class="card card-step">
@@ -90,7 +101,7 @@
           </ol>
         </div>
         <div class="section-split-image vertical-image">
-          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Home seller meeting" />
+          <img src="/images/how-it-works-photo.png" alt="Home seller meeting" />
         </div>
       </section>
 
@@ -149,5 +160,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/header.js" defer></script>
   </body>
 </html>

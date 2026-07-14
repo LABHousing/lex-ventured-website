@@ -11,23 +11,22 @@
     <meta property="og:url" content="https://lex-ventured-website-connect-repo.up.railway.app/about.html" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <script src="scripts.js" defer></script>
   </head>
-  <body>
-    <header class="site-header">
+  <body class="about-page">
+    <header class="site-header" role="banner">
       <div class="container header-inner">
         <a class="brand" href="index.html">
           <img class="site-logo" src="/images/logo.png" alt="Lex Ventured & Co logo" />
           <span class="brand-text">Lex Ventured & Co</span>
-        </a> &middot; <a href="terms-of-use.html">Terms of Use</a></p>
         </a>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu-panel" aria-label="Toggle navigation">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
-        <nav id="site-menu" class="site-nav">
+
+        <nav id="site-menu" class="site-nav" aria-label="Primary navigation">
           <a href="index.html">Home</a>
           <a href="how-it-works.html">How It Works</a>
           <a href="selling-options.html">Selling Options</a>
@@ -35,13 +34,28 @@
           <a href="get-your-offer.html">Get Your Offer</a>
           <a href="contact.html">Contact Us</a>
         </nav>
+
         <div class="header-actions">
           <a class="header-link" href="tel:12625970670">(262) 597-0670</a>
           <a class="button button-primary" href="get-your-offer.html">Get Your Offer</a>
         </div>
       </div>
+
+      <div id="site-menu-panel" class="mobile-menu-panel" hidden aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="selling-options.html">Selling Options</a>
+        <a href="about.html">About Us</a>
+        <a href="get-your-offer.html">Get Your Offer</a>
+        <a href="contact.html">Contact Us</a>
+        <div class="mobile-menu-footer">
+          <a class="mobile-phone" href="tel:12625970670">(262) 597-0670</a>
+          <a class="button button-primary mobile-menu-button" href="get-your-offer.html">Get Your Offer</a>
+        </div>
+      </div>
     </header>
 
+    <div class="site-nav-backdrop" data-nav-backdrop></div>
     <main>
       <section class="section-hero section-soft">
         <div class="container page-hero">
@@ -54,7 +68,7 @@
       <section class="container section-split">
         <div>
           <h2>Our approach</h2>
-          <p>Lex Venture is a real estate solutions company focused on respectful conversations and thoughtful recommendations. We guide each homeowner through options that align with their timing, financial needs, and comfort level.</p>
+          <p>Lex Ventured & Co. helps homeowners explore the selling option that best fits their situation. Whether you’re looking for a cash offer, more time to move, or another flexible solution, we focus on honest conversations, clear guidance, and helping you make the decision that’s right for you.</p>
           <ul class="check-list">
             <li>Honest communication</li>
             <li>Seller-focused options</li>
@@ -63,7 +77,7 @@
           </ul>
         </div>
         <div class="section-split-image vertical-image">
-          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80" alt="Friendly real estate consultation" />
+          <img src="/images/IMG_0069.png" alt="Professional real estate consultation" />
         </div>
       </section>
 
@@ -73,16 +87,9 @@
           <h2>Guided by experience and care</h2>
         </div>
         <div class="cards cards-grid">
-          <article class="card about-card">
-            <div class="placeholder-photo">Photo placeholder</div>
-            <div>
-              <p class="caption">Founder photo placeholder</p>
-              <p><strong>[Founder name]</strong> is the founder of Lex Ventured & Co and brings real estate experience with an emphasis on fairness and clarity. Replace this text with your real biography.</p>
-            </div>
-          </article>
           <article class="card">
             <h3>Markets served</h3>
-            <p>We serve homeowners in [Market area placeholder]. Add the regions and neighborhoods you work with here.</p>
+            <p>We work with homeowners across Wisconsin, Illinois, and select markets nationwide. No matter your situation, we’re here to help you explore the solution that fits your goals best.</p>
           </article>
           <article class="card">
             <h3>Company values</h3>
@@ -120,5 +127,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/header.js" defer></script>
   </body>
 </html>
