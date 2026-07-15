@@ -959,6 +959,10 @@ body {
   color: var(--primary);
 }
 
+.home-page .cta-inner h2 {
+  color: #ffffff;
+}
+
 .form-card,
 .notice-card {
   background: #ffffff;
